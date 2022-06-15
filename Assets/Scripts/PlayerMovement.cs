@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameObject particle;
+
     public float speed;
 
     private bool isMoving;
@@ -23,5 +25,14 @@ public class PlayerMovement : MonoBehaviour
     public void RevertRotation()
     {
         isMoving = !isMoving;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemy")
+        {
+            particle.SetActive(true);
+            Destroy(this);
+        }
     }
 }
