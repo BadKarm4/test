@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3984125883041149882}
   - component: {fileID: 4150129671696214536}
-  - component: {fileID: 3768252034569169924}
+  - component: {fileID: 3160015564091906730}
   m_Layer: 0
   m_Name: EnemyWithoutCoin
   m_TagString: Enemy
@@ -85,8 +85,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3768252034569169924
-BoxCollider2D:
+--- !u!70 &3160015564091906730
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -98,16 +98,6 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0008804947}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.13, y: 0.24}
-    newSize: {x: 1.13, y: 0.24}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.13, y: 0.22062922}
-  m_EdgeRadius: 0
+  m_Offset: {x: 0.00015131613, y: -0.0018396977}
+  m_Size: {x: 1.1224854, y: 0.22115271}
+  m_Direction: 1
